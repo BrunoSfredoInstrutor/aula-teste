@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Tipografia */
+h1, h2 {
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+a {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #004d99;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding-bottom: 0.2rem;
+}
+
+header nav a:hover {
+    border-bottom: 2px solid #ff9900;
+}
+
+/* Seção principal */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Banner */
+.banner {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZLmIOVgut7O0jlsmwX_CRMVZx25bTcIyePw&shttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZLmIOVgut7O0jlsmwX_CRMVZx25bTcIyePw&s) no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-cta {
+    background-color: #ff9900;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.btn-cta:hover {
+    background-color: #e68a00;
+}
+
+/* Seção de notícias (resumo) */
+.noticias-resumo, .eventos {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.noticias-resumo h2, .eventos h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #004d99;
+}
+
+.noticias-resumo h2 i, .eventos h2 i {
+    margin-right: 10px;
+}
+
+.card-noticia {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin: 1rem;
+    display: inline-block;
+    width: calc(50% - 2rem);
+    vertical-align: top;
+    text-align: left;
+}
+
+.card-noticia h3 {
+    margin-bottom: 0.5rem;
+}
+
+.card-noticia a {
+    color: #004d99;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.card-noticia a:hover {
+    color: #ff9900;
+}
+
+/* Seção de eventos */
+.eventos .evento {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+    width: calc(50% - 2rem);
+    vertical-align: top;
+    text-align: left;
+}
+
+/* Estilos da página de contato */
+.contato-info {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contato-info h2 {
+    text-align: center;
+    color: #004d99;
+    margin-bottom: 1rem;
+}
+
+.contato-info p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-contato .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-contato label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.form-contato input, .form-contato textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-contato input:focus, .form-contato textarea:focus {
+    outline: none;
+    border-color: #004d99;
+    box-shadow: 0 0 5px rgba(0, 77, 153, 0.2);
+}
+
+.btn-cta {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Página de notícias */
+.pagina-noticias {
+    max-width: 900px;
+    margin: auto;
+}
+
+.pagina-noticias h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #004d99;
+}
+
+.noticia-completa {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.noticia-completa img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+/* Estilos da página de eventos */
+.pagina-eventos {
+    max-width: 900px;
+    margin: auto;
+}
+
+.pagina-eventos h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #004d99;
+}
+
+.evento-completo {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.evento-completo h3 {
+    color: #004d99;
+    margin-bottom: 1rem;
+}
+
+.evento-completo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.evento-info {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin-top: 1rem;
+}
+
+.link-evento {
+    color: #ff9900;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.link-evento:hover {
+    text-decoration: underline;
+}
+
+/* Página de contato */
+.contato-info {
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contato-info h2 {
+    text-align: center;
+    color: #004d99;
+    margin-bottom: 1.5rem;
+}
+
+.form-contato .form-group {
+    margin-bottom: 1rem;
+}
+
+.form-contato label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-contato input, .form-contato textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+/* Estilos para as páginas de Login e Cadastro */
+.area-acesso {
+    max-width: 400px;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.area-acesso h2 {
+    color: #004d99;
+    margin-bottom: 1.5rem;
+}
+
+.area-acesso .form-acesso {
+    text-align: left;
+}
+
+.area-acesso .form-group {
+    margin-bottom: 1rem;
+}
+
+.area-acesso label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.area-acesso input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.area-acesso .btn-cta {
+    width: 100%;
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.area-acesso p {
+    margin-top: 1rem;
+}
+
+/* Estilos para a página de Desafios */
+.area-desafios {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.area-desafios h2 {
+    color: #004d99;
+    margin-bottom: 1rem;
+}
+
+.area-desafios p {
+    margin-bottom: 2rem;
+}
+
+.desafio-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.desafio-card h3 {
+    color: #004d99;
+    margin-bottom: 0.5rem;
+}
+
+.desafio-card .btn-desafio {
+    background-color: #004d99;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.desafio-card .btn-desafio:hover {
+    background-color: #003366;
+}
+
+/* Estilos para a página "Sobre Nós" */
+.pagina-sobre {
+    max-width: 900px;
+    margin: auto;
+}
+
+.pagina-sobre h2 {
+    text-align: center;
+    color: #004d99;
+    margin-bottom: 2rem;
+}
+
+.sobre-historia, .sobre-qualidades {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.sobre-historia h3, .sobre-qualidades h3 {
+    color: #004d99;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.sobre-qualidades {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.qualidade-item {
+    flex: 1;
+}
+
+.qualidade-item i {
+    font-size: 2rem;
+    color: #ff9900;
+    margin-bottom: 1rem;
+}
+
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        margin-top: 1rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .card-noticia, .eventos .evento {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .banner h2 {
+        font-size: 1.8rem;
+    }
+}
